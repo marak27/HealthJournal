@@ -1,0 +1,33 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="home-outline"></ion-icon>
+      Your today  .....
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="raitng">
+    <ion-label>
+      How are you today?
+    </ion-label> <br>
+    <div class ="btn">
+      <ion-button fill="clear" (click)="submit(1)">
+        <ion-icon name="heart-circle" style="color:blue;" size="large"></ion-icon>
+      </ion-button><br><br>
+      <ion-button fill="clear" (click)="submit(2)">
+        <ion-icon name="heart" style="color:lightskyblue chocolate" size="large"></ion-icon>
+      </ion-button><br><br>
+      <ion-button fill="clear" (click)="submit(3)">
+        <ion-icon name="heart-half" style="color:lightseagreen" size="large"></ion-icon>
+      </ion-button><br><br>
+      <ion-button fill="clear" (click)="submit(4)">
+        <ion-icon name="heart-dislike" style="color:chocolate;" size="large"></ion-icon>
+      </ion-button><br><br>
+      <ion-button fill="clear" (click)="submit(5)">
+        <ion-icon name="heart-dislike-circle" style="color:crimson;" size="large"></ion-icon>
+      </ion-button>
+    </div>
+  </div>
+</ion-content>

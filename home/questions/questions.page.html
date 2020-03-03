@@ -1,0 +1,80 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>
+      <ion-icon name="add-circle"></ion-icon>
+      Wellbeing Questions.....
+    <ion-button class="btn" (click)="submit()" fill="clear" (click)="nextbtn()">
+      next
+    </ion-button>
+  </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <div class="header">
+    <ion-title>
+      <u>Symptoms</u>
+    </ion-title>
+  </div>
+
+  <div>
+    <ion-grid class="questions">
+      <div>
+        <p>Do you have Pain today?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="pain" max="5" nullable="false"  
+          (ngModelChange)="painChange($event)"> </ion-rating>
+      </div>
+      <div>
+        <p>Do you have Shortness of Breath?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="breath" max="5" nullable="false" 
+        (ngModelChange)="breathChange($event)"> </ion-rating>
+      </div>
+      <div>
+        <p>Do you Sweat you Legs?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="legs" max="5" emptyStarIconName="star-solid"  
+          halfStarIconName="star-half" starIconName="star"  nullable="false"  
+          > </ion-rating>
+      </div>
+      <div>
+        <p>Do you have Cough?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="cough" max="5" emptyStarIconName="star-solid"  
+          halfStarIconName="star-half" starIconName="star"  nullable="false"  
+          > </ion-rating>
+      </div>
+      <div>       
+        <p>Do you feel Hoarseness?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="hoarseness" max="5" emptyStarIconName="star-solid"  
+          halfStarIconName="star-half" starIconName="star"  nullable="false"  
+          > </ion-rating>
+      </div>
+      <div>
+        <p>Do you feel Fatique?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="fatique" max="5" emptyStarIconName="star-solid"  
+          halfStarIconName="star-half" starIconName="star"  nullable="false"  
+          > </ion-rating>
+      </div>
+      <div>
+        <p>Do you have Unexplained loss of Appetite/Weight?</p>
+      </div>
+      <div class="rating">
+        <ion-rating [(ngModel)]="weight" max="5" emptyStarIconName="star-solid"  
+          halfStarIconName="star-half" starIconName="star"  nullable="false"  
+          > </ion-rating>
+      </div>
+    </ion-grid>
+  </div>
+
+
+</ion-content>

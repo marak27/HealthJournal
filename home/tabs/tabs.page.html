@@ -1,0 +1,41 @@
+<div *ngIf="Uauth.authenticated; else login">
+  <ion-tabs>
+    <ion-tab-bar slot="bottom">
+  
+      <ion-tab-button tab="home">
+        <ion-icon name="home-outline"></ion-icon>
+        <ion-label>Home</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="questions">
+        <ion-icon name="document-text-outline"></ion-icon>
+        <ion-label>Servey</ion-label>
+      </ion-tab-button>
+  
+      <ion-tab-button tab="settings">
+        <ion-icon name="cog-outline"></ion-icon>
+        <ion-label>Settings</ion-label>
+      </ion-tab-button>
+  
+    </ion-tab-bar>
+  </ion-tabs>
+</div>
+<ng-template #login>
+  <div class="content">
+    <ion-grid style="max-width: 465px;">
+      <ion-row>
+        <ion-col>
+          
+          <ion-button class="fbbutton" expand="block" (click)="fbBtn()">Facebook
+            <ion-icon slot="end" name="logo-facebook"></ion-icon>
+          </ion-button><br>
+  
+          <ion-button fill="solid" color="#d34836" class="gbutton" expand="block" (click)="gBtn()">Google 
+            <ion-icon  slot="end" name="logo-google"></ion-icon>
+          </ion-button>
+
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
+</ng-template>

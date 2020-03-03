@@ -1,0 +1,25 @@
+ion-content ion-toolbar {
+    --background: translucent;
+  }
+  
+  .header {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2em;
+  }
+  .btn {
+    position: auto;
+    float: right;
+    size: small;
+  }
+  .questions {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+  }
+  .rating {
+    display: grid;
+    align-items: center;
+    margin-left: 4em;
+  }
